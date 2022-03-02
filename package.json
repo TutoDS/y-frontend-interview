@@ -1,38 +1,39 @@
 {
-  "name": "y-frontend-interview",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.0",
-    "web-vitals": "^0.2.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "random-fact",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"prebuild": "rimraf dist",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"axios": "^0.26.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-router-dom": "^6.2.1",
+		"sass": "^1.49.9"
+	},
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.4.0",
+		"@types/react": "^17.0.33",
+		"@types/react-dom": "^17.0.10",
+		"@vitejs/plugin-react": "^1.0.7",
+		"autoprefixer": "^10.4.2",
+		"husky": "^7.0.0",
+		"postcss": "^8.4.5",
+		"postcss-import": "^14.0.2",
+		"precss": "^4.0.0",
+		"prettier": "^2.5.1",
+		"prettier-plugin-tailwindcss": "^0.1.5",
+		"pretty-quick": "^3.1.3",
+		"rimraf": "^3.0.2",
+		"tailwindcss": "^3.0.23",
+		"typescript": "^4.5.4",
+		"vite": "^2.8.0",
+		"vite-plugin-react-svg": "^0.2.0",
+		"vite-tsconfig-paths": "^3.4.1"
+	}
 }

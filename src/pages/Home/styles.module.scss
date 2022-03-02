@@ -1,0 +1,59 @@
+.container {
+	// Set full width and height
+	@apply h-[100vh] w-full;
+
+	// Using Flex (can use grid too)
+	@apply flex;
+
+	& > * {
+		flex: 0 1 50%;
+	}
+}
+
+.image-container {
+	// Padding
+	@apply p-24;
+
+	@apply flex flex-col items-start justify-between;
+
+	// Set text color
+	@apply text-white;
+
+	// Set background
+	@apply bg-black bg-opacity-75 bg-home bg-cover bg-blend-overlay;
+
+	& > h1 {
+		// Font size
+		@apply text-8xl;
+
+		// Force capitalization
+		@apply capitalize;
+
+		// Set font weight
+		@apply font-extrabold;
+
+		// Use serif font
+		@apply font-serif;
+
+		// Force break after each word
+		word-spacing: 9999px;
+	}
+
+	& > h2 {
+		// Font size
+		@apply text-4xl;
+
+		// Set font weight
+		@apply font-light;
+
+		// Use serif font
+		@apply font-serif;
+	}
+}
+
+.text-container {
+	// Padding
+	@apply p-24;
+
+	@apply flex flex-col items-center justify-center;
+}

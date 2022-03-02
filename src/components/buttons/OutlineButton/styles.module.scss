@@ -1,0 +1,40 @@
+.button {
+	// Padding
+	@apply px-4 py-2;
+
+	// Background & Border
+	@apply rounded border-2 border-solid;
+	@apply bg-transparent;
+
+	// Font settings
+	@apply font-serif font-bold;
+
+	// Transition
+	@apply transition-all duration-200 ease-in-out;
+
+	&:focus,
+	&:active {
+		@apply outline-none;
+	}
+}
+
+.dark-button {
+	// Border & Text Color
+	@apply border-black text-black;
+
+	// Hover Style
+	&:hover {
+		@apply bg-black text-white;
+	}
+}
+
+.light-button {
+	// Border & Text Color
+	@apply border-white;
+	@apply text-white;
+
+	// Hover Style
+	&:hover {
+		@apply bg-white text-black;
+	}
+}

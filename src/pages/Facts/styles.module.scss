@@ -1,0 +1,149 @@
+.container {
+	// Set full width and height
+	@apply h-[100vh] w-full;
+
+	// Using Flex (can use grid too)
+	@apply flex;
+
+	& > * {
+		flex: 0 1 50%;
+	}
+}
+
+.fact-container {
+	// Position relative to set the X and Trash icon with position absolute
+	@apply relative;
+
+	// Padding
+	@apply p-24;
+
+	// Flex column on content
+	@apply flex flex-col items-start justify-center gap-6;
+
+	& > h1 {
+		// set max with to break after 2 numbers
+		max-width: 2ch;
+		word-break: break-all;
+
+		// Line height
+		@apply leading-none;
+
+		// Font size
+		@apply text-[6rem];
+
+		// Force capitalization
+		@apply capitalize;
+
+		// Set font weight
+		@apply font-extrabold;
+
+		// Use serif font
+		@apply font-serif;
+	}
+
+	& > h2 {
+		// Font size
+		@apply text-4xl;
+
+		// Set font weight
+		@apply font-bold;
+
+		// Use serif font
+		@apply font-serif;
+	}
+
+	& > p {
+		// Use serif font
+		@apply font-serif;
+
+		// Font size
+		@apply text-2xl;
+
+		// Set font weight
+		@apply font-bold;
+
+		// Set max with of content
+		@apply max-w-[50%];
+	}
+}
+
+.icon {
+	// Set position of icons
+	@apply absolute right-24;
+
+	// Set Size
+	@apply w-20;
+
+	// Set Color
+	@apply fill-slate-600 stroke-slate-600;
+
+	// Use cursor pointer
+	@apply cursor-pointer;
+
+	// Transition to smooth the color change on hover
+	@apply transition-all duration-200 ease-in-out;
+
+	&.on-top {
+		@apply top-24;
+	}
+
+	&.on-bottom {
+		@apply bottom-24;
+	}
+
+	&:hover {
+		@apply fill-slate-800 stroke-slate-800;
+	}
+}
+
+// .on-top {
+// 	@apply top-6;
+// }
+
+.timeline-container {
+	// Position relative to set position of dates
+	@apply relative;
+
+	// Padding
+	@apply p-24;
+
+	// Flex
+	@apply flex flex-col items-center justify-center gap-4;
+
+	// Use white color to text
+	@apply text-white;
+}
+
+.years-container {
+	// set position
+	@apply absolute bottom-24 left-24 right-24;
+
+	// Use Flex
+	@apply flex flex-wrap items-center justify-center gap-4;
+
+	// Apply margin
+	@apply my-12;
+}
+
+.year-btn {
+	// Padding
+	@apply px-4 py-2;
+
+	// Rounded borders
+	@apply rounded;
+
+	// Background Transparent (by default) and Text Color
+	@apply bg-transparent text-gray-300;
+
+	// Font settings
+	@apply font-medium;
+
+	// Transition Settings
+	@apply transition-all duration-200 ease-in-out;
+
+	&:hover,
+	&.current {
+		// Color and Background
+		@apply bg-teal-500 text-white;
+	}
+}
