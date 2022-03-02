@@ -62,7 +62,7 @@ const Facts = () => {
 	const getRandomColor = useCallback(async () => {
 		try {
 			const { data } = await axios.get<ColorsResponseType>(
-				'https://www.colr.org/json/colors/random/7'
+				'https://www.colr.org/json/colors/random/1'
 			);
 
 			setBgColor(`#${data.colors[0].hex}`);
