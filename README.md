@@ -58,6 +58,7 @@ You can choose to implement the design given or change it to something more of y
 <kbd><img src="./public/media/screenshots/one-fact.png" width="700px"/></kbd>
 
 **Multiple Facts:**
+
 <kbd><img src="./public/media/screenshots/multiple-facts.png" width="700px"/></kbd>
 
 <h3>Improvements & Details</h3>
