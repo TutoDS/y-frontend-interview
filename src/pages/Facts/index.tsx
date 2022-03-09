@@ -37,7 +37,8 @@ const Facts = () => {
 	// Handle the get of random fact
 	const handleGetRandomFact = () => {
 		getRandomFact();
-		setCurrentIndex(listOfFacts.length - 1);
+
+		setCurrentIndex(listOfFacts.length > 0 ? listOfFacts.length - 1 : 0);
 	};
 
 	// Handle close the fact
