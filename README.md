@@ -80,7 +80,7 @@ You can choose to implement the design given or change it to something more of y
 -   [x] ~Generate a new color when generate a new fact~
 -   [x] ~Hide delete button when you don't have any facts~
 -   [ ] Persist the generated facts (using like `localStorage` or `sessionStorage`)
--   [ ] Make the layout responsive
+-   [x] ~Make the layout responsive~
 -   [ ] I can't implement the timeline, instead I generate a list of years on the bottom of the right side of the screen;
     -   The main goal is you change between facts clicking on the year.
 
