@@ -11,6 +11,5 @@ module.exports = {
 				serif: ['"Playfair Display"', 'serif']
 			}
 		}
-	},
-	plugins: [require('@tailwindcss/forms')]
+	}
 };

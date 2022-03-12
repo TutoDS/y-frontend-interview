@@ -1,8 +1,17 @@
 .container {
 	@apply flex h-[100vh] w-full;
+	overflow: auto;
 
 	& > * {
 		flex: 0 1 50%;
+	}
+
+	@media (max-width: theme('screens.md')) {
+		@apply flex flex-col-reverse;
+
+		& > * {
+			flex: 1 1 auto;
+		}
 	}
 }
 
@@ -41,12 +50,17 @@
 		@apply fill-slate-800 stroke-slate-800;
 	}
 }
+
 .timeline-container {
 	@apply relative flex flex-col items-center justify-center gap-4 p-24 text-white;
 }
 
 .years-container {
-	@apply absolute bottom-24 left-24 right-24 my-12 flex flex-wrap items-center justify-center gap-4 rounded-lg bg-white bg-opacity-40 px-4 py-4 shadow;
+	@apply my-12 flex flex-wrap items-center justify-center gap-4 rounded-lg bg-white bg-opacity-40 px-4 py-4 shadow;
+
+	@media (min-width: theme('screens.md')) {
+		@apply absolute bottom-24 left-24 right-24;
+	}
 }
 
 .year-btn {

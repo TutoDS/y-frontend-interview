@@ -76,22 +76,26 @@ const Facts = () => {
 					Generate Random Year Fact
 				</OutlineButton>
 
-				<div className={styles['years-container']}>
-					{years
-						.sort((a, b) => (a > b ? 1 : -1))
-						.map((year) => (
-							<button
-								key={year}
-								className={`${styles['year-btn']} ${
-									listOfFacts[currentIndex].number === year &&
-									styles['current']
-								}`}
-								onClick={() => handleYearChange(year)}
-							>
-								<span className='block truncate'>{year}</span>
-							</button>
-						))}
-				</div>
+				{listOfFacts.length > 0 && (
+					<div className={styles['years-container']}>
+						{years
+							.sort((a, b) => (a > b ? 1 : -1))
+							.map((year) => (
+								<button
+									key={year}
+									className={`${styles['year-btn']} ${
+										listOfFacts[currentIndex].number ===
+											year && styles['current']
+									}`}
+									onClick={() => handleYearChange(year)}
+								>
+									<span className='block truncate'>
+										{year}
+									</span>
+								</button>
+							))}
+					</div>
+				)}
 			</div>
 		</div>
 	);

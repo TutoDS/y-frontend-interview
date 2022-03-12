@@ -1,12 +1,17 @@
 .container {
-	// Set full width and height
-	@apply h-[100vh] w-full;
-
-	// Using Flex (can use grid too)
-	@apply flex;
+	@apply flex h-[100vh] w-full;
+	overflow: auto;
 
 	& > * {
 		flex: 0 1 50%;
+	}
+
+	@media (max-width: theme('screens.md')) {
+		@apply flex flex-col;
+
+		& > * {
+			flex: 1 1 auto;
+		}
 	}
 }
 
