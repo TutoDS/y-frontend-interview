@@ -36,30 +36,36 @@ Build a SPA that follows these requirements:
 You can choose to implement the design given or change it to something more of your liking. Attention to detail and usability concerns are appreciated.
 
 **First Screen with no facts:**
-<kbd><img src="https://img.techpowerup.org/201103/macbook-pro-5.png" width="700px"/></kbd>
+
+<img src="https://img.techpowerup.org/201103/macbook-pro-5.png" width="700px"/>
 
 **Screen with 1 fact generated:**
-<kbd><img src="https://img.techpowerup.org/201104/macbook-pro-2.png" width="700px"/></kbd>
+
+<img src="https://img.techpowerup.org/201104/macbook-pro-2.png" width="700px"/>
 
 **Screen with 2 facts generated:**
-<kbd><img src="https://img.techpowerup.org/201104/macbook-pro-3.png" width="700px"/></kbd>
+
+<img src="https://img.techpowerup.org/201104/macbook-pro-3.png" width="700px"/>
 
 **Change between facts:**
-<kbd><img src="https://img.techpowerup.org/201104/macbook-pro-9.png" width="700px"/></kbd>
+
+<img src="https://img.techpowerup.org/201104/macbook-pro-9.png" width="700px"/>
 
 <br />
 
 <h2>Final Result</h2>
 
 **Homepage without facts:**
-<kbd><img src="./public/media/screenshots/home.png" width="700px"/></kbd>
+
+<img src="./public/media/screenshots/home.png" width="700px"/>
 
 **One random fact:**
-<kbd><img src="./public/media/screenshots/one-fact.png" width="700px"/></kbd>
+
+<img src="./public/media/screenshots/one-fact.png" width="700px"/>
 
 **Multiple Facts:**
 
-<kbd><img src="./public/media/screenshots/multiple-facts.png" width="700px"/></kbd>
+<img src="./public/media/screenshots/multiple-facts.png" width="700px"/>
 
 <h3>Improvements & Details</h3>
 
