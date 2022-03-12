@@ -1,9 +1,5 @@
 .container {
-	// Set full width and height
-	@apply h-[100vh] w-full;
-
-	// Using Flex (can use grid too)
-	@apply flex;
+	@apply flex h-[100vh] w-full;
 
 	& > * {
 		flex: 0 1 50%;
@@ -11,77 +7,27 @@
 }
 
 .fact-container {
-	// Position relative to set the X and Trash icon with position absolute
-	@apply relative;
-
-	// Padding
-	@apply p-24;
-
-	// Flex column on content
-	@apply flex flex-col items-start justify-center gap-6;
+	@apply relative flex flex-col items-start justify-center gap-6 p-24;
 
 	& > h1 {
 		// set max with to break after 2 numbers
 		max-width: 2ch;
 		word-break: break-all;
 
-		// Line height
-		@apply leading-none;
-
-		// Font size
-		@apply text-[6rem];
-
-		// Force capitalization
-		@apply capitalize;
-
-		// Set font weight
-		@apply font-extrabold;
-
-		// Use serif font
-		@apply font-serif;
+		@apply font-serif text-[6rem] font-extrabold capitalize leading-none;
 	}
 
 	& > h2 {
-		// Font size
-		@apply text-4xl;
-
-		// Set font weight
-		@apply font-bold;
-
-		// Use serif font
-		@apply font-serif;
+		@apply font-serif text-4xl font-bold;
 	}
 
 	& > p {
-		// Use serif font
-		@apply font-serif;
-
-		// Font size
-		@apply text-2xl;
-
-		// Set font weight
-		@apply font-bold;
-
-		// Set max with of content
-		@apply max-w-[50%];
+		@apply max-w-[50%] font-serif text-2xl font-bold;
 	}
 }
 
 .icon {
-	// Set position of icons
-	@apply absolute right-24;
-
-	// Set Size
-	@apply w-20;
-
-	// Set Color
-	@apply fill-slate-600 stroke-slate-600;
-
-	// Use cursor pointer
-	@apply cursor-pointer;
-
-	// Transition to smooth the color change on hover
-	@apply transition-all duration-200 ease-in-out;
+	@apply absolute right-24 w-20 cursor-pointer fill-slate-600 stroke-slate-600 transition-all duration-200 ease-in-out;
 
 	&.on-top {
 		@apply top-24;
@@ -95,51 +41,16 @@
 		@apply fill-slate-800 stroke-slate-800;
 	}
 }
-
-// .on-top {
-// 	@apply top-6;
-// }
-
 .timeline-container {
-	// Position relative to set position of dates
-	@apply relative;
-
-	// Padding
-	@apply p-24;
-
-	// Flex
-	@apply flex flex-col items-center justify-center gap-4;
-
-	// Use white color to text
-	@apply text-white;
+	@apply relative flex flex-col items-center justify-center gap-4 p-24 text-white;
 }
 
 .years-container {
-	// set position
-	@apply absolute bottom-24 left-24 right-24;
-
-	// Use Flex
-	@apply flex flex-wrap items-center justify-center gap-4;
-
-	// Apply margin
-	@apply my-12;
+	@apply absolute bottom-24 left-24 right-24 my-12 flex flex-wrap items-center justify-center gap-4 rounded-lg bg-white bg-opacity-40 px-4 py-4 shadow;
 }
 
 .year-btn {
-	// Padding
-	@apply px-4 py-2;
-
-	// Rounded borders
-	@apply rounded;
-
-	// Background Transparent (by default) and Text Color
-	@apply bg-transparent text-gray-300;
-
-	// Font settings
-	@apply font-medium;
-
-	// Transition Settings
-	@apply transition-all duration-200 ease-in-out;
+	@apply rounded bg-transparent px-4 py-2 font-medium text-gray-600 transition-all duration-200 ease-in-out;
 
 	&:hover,
 	&.current {
